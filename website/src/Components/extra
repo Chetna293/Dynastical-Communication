@@ -1,0 +1,194 @@
+team 1
+
+        <div className="team-section">
+            <div className="container">
+                <div className="row">
+                    <motion.div 
+                    animate={{ rotate: rotate ? 360 : 0 }} 
+                    onClick={() => {
+                        setRotate(!rotate);
+                    }}
+                    className="title">
+                        <h3>Heros Behind The Company</h3>
+                        <h1>Creative Team</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </motion.div>
+                </div>
+                <div className="team-card">
+                    <div className="card">
+                        <div className="image-section">
+                            <img src={team1} alt="team1" />
+                        </div>
+                        <div className="content">
+                            <h3>ABC</h3>
+                            <h4>Web Developer</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="image-section">
+                            <img src={team1} alt="team1" />
+                        </div>
+                        <div className="content">
+                            <h3>LMN</h3>
+                            <h4>Web Developer</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="image-section">
+                            <img src={team1} alt="team1" />
+                        </div>
+                        <div className="content">
+                            <h3>XYZ</h3>
+                            <h4>Web Developer</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+team Css Part
+
+.team-section{
+    width:100%;
+    height:auto;
+}
+
+.team-section .container{
+    width:80%;
+    margin-left: 10%;
+    display: inline-block;
+}
+
+.team-section .container .row{
+    width:60%;
+    margin:auto;
+}
+
+.team-section .container .row .title{
+    text-align:center;
+    margin-top:50px;
+    cursor: pointer;
+}
+
+.team-section .container .row .title h1{
+    font-size:35px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color:#eb6234;
+}
+
+.team-section .container .row .title p{
+    font-size:18px;
+    font-family: sans-serif;
+    margin:30px 0px;
+    color:#a3a3a3;
+}
+
+.team-section .container .team-card{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:40px;
+    margin-top:50px;
+}
+
+.team-section .container .team-card .card{
+    width:100%;
+    background-color:#fafafa;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.team-section .container .team-card .card:hover{
+    background-color: #f3f3f3;
+    transition: 0.5s;
+}
+
+.team-section .container .team-card .card .image-section img{
+    height: 150px;
+    width:150px;
+    border-radius: 50%;
+    border:6px solid #fff
+}
+
+.team-section .container .team-card .card .content{
+    width:100%;
+    text-align: center;
+}
+
+.team-section .container .team-card .card .content h3{
+    font-size: 27px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color:#639ab8;
+}
+
+.team-section .container .team-card .card .content h4{
+    font-size: 17px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color:#6e6e6e;
+}
+
+.team-section .container .team-card .card .content p{
+    font-size: 15px;
+    margin:16px 0px;
+    line-height: 1.5;
+    color:#6c6c6c;
+}
+
+@media screen and (max-width:900px){
+    .team-section .container .team-card{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width:768px){
+    .team-section .container .team-card{
+        grid-template-columns: 1fr;
+    }
+}
+
+/// services
+
+
+<ServicesItemsStyles>
+    <div className="container">
+      <SectionTitle subheading="What i will do for you" heading="Services" />
+      <div className="services__allItems">
+        <ServicesSectionItem
+          icon={<MdDesktopMac />}
+          title="web design"
+          desc="I do ui/ux design for the website that helps website to get a unique look."
+        />
+        <ServicesSectionItem
+          icon={<MdCode />}
+          title="web dev"
+          desc="I also develop the websites. I create high performance website with blazing fast speed."
+        />
+        <ServicesSectionItem
+          icon={<MdPhonelinkSetup />}
+          title="app Dev"
+          desc="I develop mobile application. I create mobile app with eye catching ui. "
+        />
+      </div>
+    </div>
+  </ServicesItemsStyles>
+
+  https://demo.templatemonster.com/demo/143361.html?_gl=1*1vyk8kd*_ga*MTQ1NDEwNTMyNC4xNjYzNjg3MTU1*_ga_FTPYEGT5LY*MTY2NDU2ODYzNC4yLjEuMTY2NDU2ODcwMS41My4wLjA.&_ga=2.152357178.262055361.1664568634-1454105324.1663687155
+
+  https://demo.templatemonster.com/demo/236667.html?_gl=1*vnijp0*_ga*MTQ1NDEwNTMyNC4xNjYzNjg3MTU1*_ga_FTPYEGT5LY*MTY2NDU2ODYzNC4yLjEuMTY2NDU2ODgwOC4xMi4wLjA.&_ga=2.244828166.262055361.1664568634-1454105324.1663687155
+
+  https://preview.themeforest.net/item/solam-solar-panel-installer-wordpress-theme/full_screen_preview/35975997?_ga=2.97065823.1171888961.1664568001-859251283.1663655511&_gac=1.50380251.1663753628.Cj0KCQjw7KqZBhCBARIsAI-fTKKOcFpjARHEl58vy4-L_Ct-Hl-8LDST6EuwSyYJALx3xdQFiDGcUhoaArRwEALw_wcB
+
+  http://preview.themeforest.net/item/soltech-solar-renewable-energy-wordpress-theme/full_screen_preview/36758172?_ga=2.160175229.1171888961.1664568001-859251283.1663655511&_gac=1.196082910.1663753628.Cj0KCQjw7KqZBhCBARIsAI-fTKKOcFpjARHEl58vy4-L_Ct-Hl-8LDST6EuwSyYJALx3xdQFiDGcUhoaArRwEALw_wcB
+
+  https://preview.themeforest.net/item/grevo-electric-mobility-services-html-template/full_screen_preview/39860119?_ga=2.200547182.1171888961.1664568001-859251283.1663655511&_gac=1.61721310.1663753628.Cj0KCQjw7KqZBhCBARIsAI-fTKKOcFpjARHEl58vy4-L_Ct-Hl-8LDST6EuwSyYJALx3xdQFiDGcUhoaArRwEALw_wcB

@@ -1,0 +1,49 @@
+.video-container{
+    width:100%;
+    height:30rem;
+    background-color:black;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    margin-top:5%;
+}
+
+
+.video-container .content{
+    width:45%;
+    height:100%;    
+    margin-left:5%;
+}
+
+.content p{
+    font-size: 1.17rem;
+    margin-top: 20%;
+}
+
+.content h1{
+    color:#eb6234;
+    font-size: 40px;
+    margin-top: 1%;
+}
+
+.content span{
+    
+    font-size: 16px;
+    margin-top: 5%;
+}
+
+.add-video{
+    width:45%;
+    height:100%;
+}
+
+.add-video video {
+    width: 600px;
+    height: 230px;
+    cursor: pointer;
+    margin: 100px -50px;
+}
+
+.add-video video:hover{
+    transform: scale(1.2);
+}

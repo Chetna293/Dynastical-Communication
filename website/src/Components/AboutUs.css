@@ -1,0 +1,19 @@
+#aboutus{
+    background-color: black;
+    color:#fff;
+    width:100%;
+    Height:auto;
+}
+
+#aboutus h1{
+    font-size: 40px;
+    color:#eb6234;
+    text-align: center;
+}
+
+#aboutus p{
+    font-size:18px;
+    font-family: sans-serif;
+    margin:30px 30px;
+    color:#ffffff;
+}

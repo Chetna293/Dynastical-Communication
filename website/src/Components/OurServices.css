@@ -1,0 +1,80 @@
+/*Our Services*/
+
+#features{
+  text-align: center;
+}
+
+#features h3{
+  font-size: 18px;
+}
+
+#features h1{
+  font-size: 40px;
+  color:#eb6234;
+
+}
+
+.features{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.features .f-box{
+  width: 250px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.04);
+  margin: 18px 10px;
+  transition: 0.1s;
+  background-color:black;
+  color: #fff;
+  text-align: center;
+  animation: dance 10s infinite; 
+}
+
+@keyframes dance{
+  0% {transform: rotate(-5deg)}
+  25% {transform: rotate(0deg)}
+  60% {transform: scale(1.1)}
+  50% {transform: rotate(5deg)}
+  75% {transform: rotate(0deg)}
+  100% {transform: rotate(-5deg)}
+}
+
+.f-box:hover{
+  font-weight: bolder;
+  transform: scale(1.1);
+  background-color: #055d93;
+}
+
+.f-box h2{
+  color:#eb6234
+}
+
+#features .whypickus{
+  width:100%;
+    height:auto;
+    background-color:black;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    margin-top:5%;
+    display: inline-block;
+}
+
+.whypickus h1{
+  width:100%;
+}
+
+
+.whypickus p{
+  margin-top:10px;
+  margin-left:3rem;
+  font-size: 1.17rem;
+  text-align: left;
+  display: list-item;
+  list-style:disc;
+}
